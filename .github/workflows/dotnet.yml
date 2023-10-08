@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 7.0.x
     - name: Restore dependencies
-      run: dotnet src/Modulith.sln restore
+      run: dotnet restore src/Modulith.sln
     - name: Build
       run: dotnet build src/Modulith.sln --no-restore
     - name: Test
