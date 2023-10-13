@@ -2,14 +2,14 @@ using Sales;
 using Shipping;
 using Billing;
 using Microsoft.OpenApi.Models;
-using Product;
+using Catalog;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSales();
 builder.Services.AddShipping();
 builder.Services.AddBilling();
-builder.AddProduct();
+builder.AddCatalog();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Harvest Trading Company", Version = "v1" });

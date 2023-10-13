@@ -11,11 +11,11 @@ using Steeltoe.Connector.EFCore;
 using Steeltoe.Connector.MySql.EFCore;
 using Steeltoe.Management.TaskCore;
 
-namespace Product
+namespace Catalog
 {
     public static class ConfigureServices
     {
-        public static void AddProduct(this WebApplicationBuilder builder)
+        public static void AddCatalog(this WebApplicationBuilder builder)
         {
             ConfigureControllers(builder);
             ConfigureSettings(builder);
@@ -33,7 +33,7 @@ namespace Product
             var assemblyPath = typeof(ConfigureServices).Assembly.Location;
             var directory = Path.GetDirectoryName(assemblyPath);
             
-            Console.WriteLine($"Products: ${directory}");
+            Console.WriteLine($"Catalog: ${directory}");
             
             var fileProvider = new PhysicalFileProvider(directory);
             builder.Services.AddSingleton<IFileProvider>(fileProvider);

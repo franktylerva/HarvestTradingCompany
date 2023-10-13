@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Product.Contracts\Catalog.Contracts.csproj" />
+      <ProjectReference Include="..\Catalog.Contracts\Catalog.Contracts.csproj" />
     </ItemGroup>
 
     <ItemGroup>
