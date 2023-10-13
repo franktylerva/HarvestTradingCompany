@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Catalog.Database;
+using Catalog.Entities;
 
 namespace Catalog.Controllers;
 
@@ -14,8 +15,8 @@ public class ProductController : ControllerBase
     }
 
     [HttpGet]
-    public String Get()
+    public IEnumerable<Entities.Product> Get()
     {
-        return "Products";
+        return _productDbContext.Products;
     }
 }

@@ -9,7 +9,6 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <SteeltoeVersion>3.2.3</SteeltoeVersion>
-        <RootNamespace>Product</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
