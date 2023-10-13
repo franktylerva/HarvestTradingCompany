@@ -1,12 +1,14 @@
 using Sales;
 using Shipping;
 using Billing;
+using Product;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSales();
 builder.Services.AddShipping();
 builder.Services.AddBilling();
+builder.Services.AddProduct();
 
 var app = builder.Build();
 
