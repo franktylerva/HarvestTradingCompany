@@ -9,6 +9,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <SteeltoeVersion>3.2.3</SteeltoeVersion>
+        <RootNamespace>Product</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -20,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Product.Contracts\Product.Contracts.csproj" />
+      <ProjectReference Include="..\Product.Contracts\Catalog.Contracts.csproj" />
     </ItemGroup>
 
     <ItemGroup>
