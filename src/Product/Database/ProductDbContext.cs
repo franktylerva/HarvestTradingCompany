@@ -1,7 +1,7 @@
+using Catalog.Entities;
 using Microsoft.EntityFrameworkCore;
-using Product.Entities;
 
-namespace Product.Database;
+namespace Catalog.Database;
 
 public class ProductDbContext : DbContext
 {

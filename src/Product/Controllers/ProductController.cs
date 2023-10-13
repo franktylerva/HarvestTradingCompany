@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Product.Database;
+using Catalog.Database;
 
-namespace Product.Controllers;
+namespace Catalog.Controllers;
 
 [ApiController]
 [Route("/api/products")]

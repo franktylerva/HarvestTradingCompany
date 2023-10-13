@@ -1,4 +1,4 @@
-namespace Product.Entities;
+namespace Catalog.Entities;
 
 public class Author
 {
