@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 7.0.x
     - name: Restore dependencies
-      run: dotnet restore src/Modulith.sln
+      run: dotnet restore src/HarvestTrading.sln
     - name: Build
-      run: dotnet build src/Modulith.sln --no-restore
+      run: dotnet build src/HarvestTrading.sln --no-restore
     - name: Test
-      run: dotnet test src/Modulith.sln --no-build --verbosity normal
+      run: dotnet test src/HarvestTrading.sln --no-build --verbosity normal
