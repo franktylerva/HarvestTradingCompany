@@ -8,8 +8,9 @@
   "MySql": {
     "Client": {
       "Host": "localhost",
+      "Port": "3306",
       "Database": "products",
-      "Username": "blazor",
+      "Username": "products",
       "Password": "secret"
     }
   }

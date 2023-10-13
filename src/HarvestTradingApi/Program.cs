@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSales();
 builder.Services.AddShipping();
 builder.Services.AddBilling();
-builder.Services.AddProduct();
+builder.AddProduct();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Harvest Trading Company", Version = "v1" });
