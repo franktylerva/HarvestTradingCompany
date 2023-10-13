@@ -16,4 +16,7 @@ app.MapBilling();
 
 app.MapGet("/", () => "Hello World from the main app...");
 
+app.UseRouting();
+app.MapControllers();
+
 app.Run();
