@@ -25,3 +25,13 @@ cd src/HarvestTradingApi
 dotnet run
 ```
 Then navigate to http://localhost:5139.
+
+
+dotnet tool install dotnet-ef
+dotnet tool install --local dotnet-ef
+
+dotnet ef migrations add InitialCreate --project Product/Product.csproj --startup-project HarvestTradingApi/HarvestTradingApi.csproj --context ProductDbContext
+
+dotnet ef database update --project Product/Product.csproj --startup-project HarvestTradingApi/HarvestTradingApi.csproj --context ProductDbContext
+
+
