@@ -10,7 +10,10 @@ builder.Services.AddSales();
 builder.Services.AddShipping();
 builder.Services.AddBilling();
 builder.Services.AddProduct();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Harvest Trading Company", Version = "v1" });
+});
 
 var app = builder.Build();
 

@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shipping", "Shipping", "{B2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales", "Sales\Sales.csproj", "{4F9BADB4-80A0-4D63-825D-250A6EA12C21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{E447ABAF-BBBC-4172-A004-893C06C47F79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarvestTradingApi", "HarvestTradingApi\HarvestTradingApi.csproj", "{E447ABAF-BBBC-4172-A004-893C06C47F79}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing", "Billing\Billing.csproj", "{E36F7E56-8B42-4A07-A570-801D7BC81645}"
 EndProject
