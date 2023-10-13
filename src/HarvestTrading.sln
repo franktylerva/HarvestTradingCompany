@@ -26,7 +26,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipping.Contracts", "Shipp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing.Contracts", "Billing.Contracts\Billing.Contracts.csproj", "{3BB313EF-B39B-4E64-886F-ABC597ECE071}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{FFB001FA-CCC6-453C-AF34-D08421FCB328}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{FFB001FA-CCC6-453C-AF34-D08421FCB328}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog", "Product\Catalog.csproj", "{928CBF19-C689-4BAF-B197-3072B452CCDF}"
 EndProject
