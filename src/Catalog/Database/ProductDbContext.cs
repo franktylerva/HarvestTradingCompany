@@ -11,5 +11,19 @@ public class ProductDbContext : DbContext
 
     public DbSet<Entities.Product>? Products { get; set; }
 
-    public DbSet<Author>? Authors { get; set; }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Entities.Product>().HasData(GetProducts());
+    }
+
+    List<Entities.Product> GetProducts()
+    {
+        return Enumerable.Range(1, 100)
+            .Select(index => new Entities.Product
+            {   
+                Id = Guid.NewGuid(),
+                Name = $"Product-{index}"
+            }).ToList();
+    }
+    
 }
