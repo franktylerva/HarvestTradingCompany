@@ -5,6 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>WebApi</RootNamespace>
+        <SteeltoeVersion>3.2.3</SteeltoeVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,10 +24,13 @@
       </PackageReference>
       <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.7" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-      <PackageReference Include="Steeltoe.Common.Hosting" Version="3.2.3" />
-      <PackageReference Include="Steeltoe.Extensions.Configuration.Kubernetes.ServiceBinding" Version="3.2.3" />
-      <PackageReference Include="Steeltoe.Extensions.Configuration.KubernetesCore" Version="3.2.3" />
-      <PackageReference Include="Steeltoe.Management.TaskCore" Version="3.2.3" />
+      <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.5" />
+      <PackageReference Include="Steeltoe.Connector.ConnectorCore" Version="$(SteeltoeVersion)" />
+      <PackageReference Include="Steeltoe.Connector.EFCore" Version="$(SteeltoeVersion)" />
+      <PackageReference Include="Steeltoe.Common.Hosting" Version="$(SteeltoeVersion)" />
+      <PackageReference Include="Steeltoe.Extensions.Configuration.Kubernetes.ServiceBinding" Version="$(SteeltoeVersion)" />
+      <PackageReference Include="Steeltoe.Extensions.Configuration.KubernetesCore" Version="$(SteeltoeVersion)" />
+      <PackageReference Include="Steeltoe.Management.TaskCore" Version="$(SteeltoeVersion)" />
     </ItemGroup>
 
     <ItemGroup>
