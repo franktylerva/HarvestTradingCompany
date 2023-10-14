@@ -8,6 +8,7 @@ using Microsoft.Extensions.FileProviders;
 using Catalog.Controllers;
 using Catalog.Database;
 using Steeltoe.Connector.EFCore;
+using Steeltoe.Connector.MySql;
 using Steeltoe.Connector.MySql.EFCore;
 using Steeltoe.Management.TaskCore;
 
@@ -42,6 +43,7 @@ namespace Catalog
 
         private static void ConfigureDatabase(WebApplicationBuilder builder)
         {
+            builder.Services.AddMySqlConnection(builder.Configuration);
             builder.Services.AddDbContext<ProductDbContext>(options => options.UseMySql(builder.Configuration));
             builder.Services.AddTask<MigrateDbContextTask<ProductDbContext>>(ServiceLifetime.Transient);
         }
