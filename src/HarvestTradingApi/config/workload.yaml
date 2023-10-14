@@ -34,16 +34,9 @@ spec:
       ref:
         branch: main
         
-#  serviceClaims:
-#    - name: blazor-on-tap-sso
-#      ref:
-#        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
-#        kind: ClassClaim
-#        name: blazor-on-tap-sso
-        
-  # serviceClaims:
-  #   - name: database
-  #     ref:
-  #       apiVersion: services.apps.tanzu.vmware.com/v1alpha1
-  #       kind: ResourceClaim
-  #       name: customer-database-claim
+  serviceClaims:
+    - name: products-db
+      ref:
+        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+        kind: ResourceClaim
+        name: customer-database-claim
