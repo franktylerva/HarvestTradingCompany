@@ -36,7 +36,7 @@ Install the dotnet-ef data migration tool.
 ```
 dotnet tool install dotnet-ef
 dotnet tool install --local dotnet-ef
-dotnet ef migrations add Change1 --project Catalog/Catalog.csproj --startup-project HarvestTradingApi/HarvestTradingApi.csproj --context ProductDbContext
+dotnet ef migrations add InitialCreate --project Catalog/Catalog.csproj --startup-project HarvestTradingApi/HarvestTradingApi.csproj --context ProductDbContext
 dotnet ef database update --project Catalog/Catalog.csproj --startup-project HarvestTradingApi/HarvestTradingApi.csproj --context ProductDbContext
 dotnet ef database drop --startup-project HarvestTradingApi/HarvestTradingApi.csproj --context ProductDbContext
 ```
