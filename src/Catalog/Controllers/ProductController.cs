@@ -17,11 +17,12 @@ public class ProductController : ControllerBase
     [HttpGet]
     public IEnumerable<Entities.Product> Get()
     {
-        return Enumerable.Range(1, 100)
-            .Select(index => new Entities.Product
-            {   
-                Id = Guid.NewGuid(),
-                Name = $"Product-{index}"
-            }).ToList();
+        return _productDbContext.Products;
+        // return Enumerable.Range(1, 100)
+        //     .Select(index => new Entities.Product
+        //     {   
+        //         Id = Guid.NewGuid(),
+        //         Name = $"Product-{index}"
+        //     }).ToList();
     }
 }
