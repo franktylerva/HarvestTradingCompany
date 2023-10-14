@@ -3,8 +3,14 @@ using Shipping;
 using Billing;
 using Microsoft.OpenApi.Models;
 using Catalog;
+using Steeltoe.Common.Hosting;
+using Steeltoe.Extensions.Configuration.Kubernetes.ServiceBinding;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration.AddKubernetesServiceBindings();
+builder.Configuration.AddEnvironmentVariables();
+builder.UseCloudHosting();
 
 builder.Services.AddSales();
 builder.Services.AddShipping();
