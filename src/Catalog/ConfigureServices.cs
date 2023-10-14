@@ -19,7 +19,7 @@ namespace Catalog
         public static void AddCatalog(this WebApplicationBuilder builder)
         {
             ConfigureControllers(builder);
-            ConfigureSettings(builder);
+            // ConfigureSettings(builder);
             ConfigureDatabase(builder);
         }
         
