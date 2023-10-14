@@ -1,6 +1,12 @@
 # **Harvest Trading Company**
 
+Harvest Trading Company is a .Net Core application that utilizes different modules to serve up a Blazor Web Assembly 
+application with backing API services.
 
+## **Deployment to Tanzu Application Platform**
+```
+ tanzu apps workload create harvest-trading -f src/HarvestTradingApi/config/workload.yaml
+```
 
 ## **Database Setup**
 In the root directory, start the supporting MySql database.
