@@ -5,7 +5,9 @@ application with backing API services.
 
 ## **Deployment to Tanzu Application Platform**
 ```
- tanzu apps workload create harvest-trading -f src/HarvestTradingApi/config/workload.yaml
+tanzu services class-claims create products-db --class mysql-unmanaged --parameter workloadRef.name=HarvestTrading
+
+tanzu apps workload create harvest-trading -f src/HarvestTradingApi/config/workload.yaml
 ```
 
 ## **Database Setup**

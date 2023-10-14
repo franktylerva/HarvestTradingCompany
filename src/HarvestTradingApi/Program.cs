@@ -12,6 +12,10 @@ builder.Configuration.AddKubernetesServiceBindings();
 builder.Configuration.AddEnvironmentVariables();
 builder.UseCloudHosting();
 
+foreach(var config in builder.Configuration.AsEnumerable()) {
+    Console.WriteLine($"{config.Key} = {config.Value}");
+}
+
 builder.Services.AddSales();
 builder.Services.AddShipping();
 builder.Services.AddBilling();
