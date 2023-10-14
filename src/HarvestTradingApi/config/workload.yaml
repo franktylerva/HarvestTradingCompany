@@ -34,9 +34,9 @@ spec:
       ref:
         branch: main
         
-#  serviceClaims:
-#    - name: products-db
-#      ref:
-#        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
-#        kind: ResourceClaim
-#        name: products-db
+  serviceClaims:
+    - name: products-db
+      ref:
+        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+        kind: ResourceClaim
+        name: products-db
