@@ -17,7 +17,7 @@ spec:
     - name: DOTNET_CLI_TELEMETRY_OPTOUT
       value: "true"
     - name: BP_DOTNET_PROJECT_PATH
-      value: "./HarvestTradingApi"
+      value: "src/HarvestTradingApi"
     - name: BP_DOTNET_PUBLISH_FLAGS
       value: "--self-contained=true"
   params:
