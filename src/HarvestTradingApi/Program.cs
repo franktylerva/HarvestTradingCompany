@@ -15,6 +15,10 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Harvest Trading Company", Version = "v1" });
 });
 
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
+
 var app = builder.Build();
 
 app.MapSales();
@@ -23,9 +27,17 @@ app.MapBilling();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-    
 
-app.MapGet("/", () => "Hello World from the main app...");
+app.UseHttpsRedirection();
+
+app.UseBlazorFrameworkFiles();
+app.UseStaticFiles();
+
+app.MapRazorPages();
+app.MapControllers();
+app.MapFallbackToFile("index.html");
+
+// app.MapGet("/", () => "Hello World from the main app...");
 
 app.UseRouting();
 app.MapControllers();

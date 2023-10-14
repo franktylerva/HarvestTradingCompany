@@ -351,3 +351,6 @@ MigrationBackup/
  
 # JetBrains Rider
 .idea/
+
+# ..DS_Store files on mac
+.DS_Store
